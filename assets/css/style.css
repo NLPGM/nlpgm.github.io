@@ -178,8 +178,8 @@ h1, h2, h3, h4, h5, h6 {
 /*#默认蓝色,学校蓝色,学校绿色*/
 #header .logo a {
   /*color: #2c4964;*/
-  /*color: #002554;*/
-  color: #115740;
+  color: #002554;
+  /*color: #115740;*/
 
 }
 #header .logo img {
@@ -1051,7 +1051,7 @@ section {
 }
 .doctors .member .pic {
   overflow: hidden;
-  width: 180px;
+  width: 120px;
   border-radius: 50%;
 }
 .doctors .member .pic img {
