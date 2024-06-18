@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>NLPGM Lab @ WHU</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/nlpgm_logo/SVG/nlpgm_logo.svg" rel="icon">
+  <link href="assets/img/nlpgm_logo/SVG/nlpgm_logo.svg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen,print" href="assets/css_pub/style.css" />
+<!--   <link href="assets/css_pub/bootstrap.min.css" rel="stylesheet" media="screen" /> -->
+  <link rel="icon" type="image/png" href="./images/logos/princeton.png">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab - v4.7.1
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+<!--  &lt;!&ndash; ======= Top Bar ======= &ndash;&gt;-->
+<!--  <div id="topbar" class="d-flex align-items-center fixed-top">-->
+<!--    <div class="container d-flex justify-content-between">-->
+<!--      <div class="contact-info d-flex align-items-center">-->
+<!--      </div>-->
+<!--      <div class="d-none d-lg-flex social-links align-items-center">-->
+<!--        <a href="opening.html" class="envelope"><i class="bi-envelope"></i></a>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+
+
+
+
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/nlpgm_logo/PNG/nlpgm_logo.png" alt="NLPGM Lab @ WHU" class="img-fluid"></a>
+          <a href="index.html">NLPGM Lab @ WHU</a>
+      </h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="people.html">People</a></li>
+          <li><a class="nav-link scrollto active" href="publications.html">Publications</a></li>
+          <li><a class="nav-link scrollto" href="https://github.com/NLPGM">GitHub</a></li>
+<!--          <li><a class="nav-link scrollto" href="opening.html">Opening</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+
+    </div>
+  </header><!-- End Header -->
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="section-title">
+      <h2>Publications</h2>
+    </div>
+
+<script>
+function copy(dest, source) {
+  if(dest.source == source) {
+    dest.innerHTML = "";
+    dest.source = null;
+    dest.style.width="0px";
+    dest.style.border = "";
+    dest.style.padding = "0px";
+  }
+  else {
+    dest.innerHTML = source.innerHTML;
+    dest.source = source;
+    dest.style.width = "800px";
+    dest.style.padding = "10px";
+    dest.style.border = "2px dotted gray";
+    dest.style.background = "#F5F5F5";
+    dest.style.margin = "10px";
+  }
+  dest.blur();
+}
+</script>
+
+<div class="container">
+<!-- <h1> Papers</h1>-->
+<br>
+<!-- <p>(*: equal contribution)</p>-->
+
+<details close>
+    <summary><font size="5">Pre-print</font></summary>
+    <script>
+        paper_count = 0
+
+        function add_paper(title, authors, conference, link, bib, abstract, arxiv_link, code, press, slides, talk, msg) {
+            list_entry = "<li style=\"font-size:18px\">"
+            if (link != null)
+                list_entry += "<a href=\"" + link + "\">"
+            list_entry += "<b>" + title + "</b>"
+            if (link != null)
+                list_entry += "</a>"
+            list_entry += "<br>" + authors + ".<br>"
+            if (conference != null)
+                list_entry+= conference + ".</li>"
+            if (bib != null) {
+                list_entry += "<div id=\"bib" + paper_count + "\" style=\"display:none\">" + bib + "</div>"
+                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",bib" + paper_count + ")\"> <span class=\"label label-success\">bib</span></a>"
+            }
+
+            if (abstract != null) {
+                list_entry += "<div id=\"abstract" + paper_count + "\" style=\"display:none\">" + abstract + "</div>"
+                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",abstract" + paper_count + ")\"> <span class=\"label label-warning\">abstract</span></a>"
+            }
+            if (arxiv_link != null)
+                list_entry += " <a href=\"" + arxiv_link + "\"><span class=\"label label-primary\">arxiv</span></a>"
+
+            if (code != null)
+                list_entry += " <a href=\"" + code + "\"><span class=\"label label-danger\">code/models</span></a>"
+
+            if (press != null)
+                list_entry += " <a href=\"" + press + "\"><span class=\"label label-success\">press</span></a>"
+
+            if (slides != null)
+                list_entry += " <a href=\"" + slides + "\"><span class=\"label label-info\">slides/poster</span></a>"
+
+            if (talk != null)
+                list_entry += " <a href=\"" + talk + "\"><span class=\"label label-default\">talk</span></a>"
+
+            list_entry += "<br>"
+
+            if (msg != null)
+                list_entry += "<i>" + msg + "</i>"
+
+            list_entry += "<div id=\"div" + paper_count + "\" style=\"font-size:15px\"></div><br>"
+
+            document.write(list_entry)
+
+            paper_count += 1
+        }
+
+        // document.write("<h2>Preprint</h2>")
+        // document.write("<ul>")
+        document.write("</ul>")
+        // document.write("<h2>Preprint</h2>")
+        document.write("<ul><br>")
+
+
+
+
+
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</details>
+
+
+
+
+<!-- --------------------------------------Publications -------------------->
+
+
+<script>
+        paper_count = paper_count
+
+        function add_paper(title, authors, conference, link, bib, abstract, arxiv_link, code, press, slides, talk, msg) {
+            list_entry = "<li style=\"font-size:18px\">"
+            if (link != null)
+                list_entry += "<a href=\"" + link + "\">"
+            list_entry += "<b>" + title + "</b>"
+            if (link != null)
+                list_entry += "</a>"
+            list_entry += "<br>" + authors + ".<br>"
+            if (conference != null)
+                list_entry+= "<i><font color=\" #707070\">" + conference + "</font></i>.</li>"
+            if (bib != null) {
+                list_entry += "<div id=\"bib" + paper_count + "\" style=\"display:none\">" + bib + "</div>"
+                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",bib" + paper_count + ")\"> <span class=\"label label-success\">bib</span></a>"
+            }
+
+            if (abstract != null) {
+                list_entry += "<div id=\"abstract" + paper_count + "\" style=\"display:none\">" + abstract + "</div>"
+                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",abstract" + paper_count + ")\"> <span class=\"label label-warning\">abstract</span></a>"
+            }
+            if (arxiv_link != null)
+                list_entry += " <a href=\"" + arxiv_link + "\"><span class=\"label label-primary\">arxiv</span></a>"
+
+            if (code != null)
+                list_entry += " <a href=\"" + code + "\"><span class=\"label label-danger\">code/models</span></a>"
+
+            if (press != null)
+                list_entry += " <a href=\"" + press + "\"><span class=\"label label-success\">press</span></a>"
+
+            if (slides != null)
+                list_entry += " <a href=\"" + slides + "\"><span class=\"label label-info\">slides/poster</span></a>"
+
+            if (talk != null)
+                list_entry += " <a href=\"" + talk + "\"><span class=\"label label-default\">talk</span></a>"
+
+            list_entry += "<br>"
+
+            if (msg != null)
+                list_entry += "<i>" + msg + "</i>"
+
+            // list_entry += "<div id=\"div" + paper_count + "\" style=\"font-size:15px\"></div><br>"
+
+            document.write(list_entry)
+
+            paper_count += 1
+        }
+
+        document.write("</ul>")
+        document.write("<ul>")
+
+
+        document.write("</ul><br>")
+        document.write("<h1>2024</h1>")
+        document.write("<ul>")
+
+
+
+        add_paper(
+            title="City Matters! A Dual-Target Cross-City Sequential POI Recommendation Model",
+            authors="Ke Sun, Chenliang Li, Tieyun Qian",
+            conference="ACM TOIS, 2024",
+        )
+
+        add_paper(
+            title="Querying Cohesive Subgraph regarding Span-Constrained Triangles on Temporal Graphs",
+            authors="Chuhan Hu, Ming Zhong, Yuanyuan Zhu, Tieyun Qian, Ting Yu, Hongyang Chen, Mengchi Liu, Jeffrey Xu Yu",
+            conference="ICDE, 2024",
+        )
+
+        add_paper(
+            title="An Ensemble-of-Experts Framework for Rehearsal-free Continual Relation Extraction",
+            authors="Shen Zhou, Yongqi Li, Xin Miao, Tieyun Qian",
+            conference="ACL Findings, 2024",
+        )
+
+        add_paper(
+            title="Episodic Memory Retrieval from LLMs: A Neuromorphic Mechanism to Generate Commonsense Counterfactuals for Relation Extraction",
+            authors="Xin Miao, Yongqi Li, Shen Zhou, Tieyun Qian",
+            conference="ACL Findings, 2024",
+        )
+
+        add_paper(
+            title="Implanting LLM's Knowledge via Reading Comprehension Tree for Toxicity Detection",
+            authors="Hankun Kang, Tieyun Qian",
+            conference="ACL Findings, 2024",
+        )
+
+        add_paper(title="Prompting Large Language Models for Counterfactual Generation: An Empirical Study",
+                authors="Yongqi Li*, Mayi Xu*, Xin Miao*, Shen Zhou*, Tieyun Qian†",
+                conference="LREC-COLING, 2024",
+                // //link="https://arxiv.org/abs/2305.14791",
+                // bib="@inproceedings{li2024llmcf,<br>" +
+                //         "&nbsp;&nbsp;&nbsp;title       = {Prompting Large Language Models for Counterfactual Generation: An Empirical Study},<br>" +
+                //         "&nbsp;&nbsp;&nbsp;author      = {Li, Yongqi and Xu, Mayi and Miao, Xin and Zhou, Shen and Qian, Tieyun},<br>" +
+                //         "&nbsp;&nbsp;&nbsp;booktitle   = {LREC-COLING},<br>" +
+                //         "&nbsp;&nbsp;&nbsp;year        = {2024}<br>}",
+                // abstract="Large language models (LLMs) have made remarkable progress in a wide range of natural language understanding and generation tasks. However, their ability to generate counterfactuals has not been examined systematically. To bridge this gap, we present a comprehensive evaluation framework on various types of NLU tasks, which covers all key factors in determining LLMs' capability of generating counterfactuals. Based on this framework, we 1) investigate the strengths and weaknesses of LLMs as the counterfactual generator, and 2) disclose the factors that affect LLMs when generating counterfactuals, including both the intrinsic properties of LLMs and prompt designing. The results show that, though LLMs are promising in most cases, they face challenges in complex tasks like RE since they are bounded by task-specific performance, entity constraints, and inherent selection bias. We also find that alignment techniques, e.g., instruction-tuning and reinforcement learning from human feedback, may potentially enhance the counterfactual generation ability of LLMs. On the contrary, simply increasing the parameter size does not yield the desired improvements. Besides, from the perspective of prompt designing, task guidelines unsurprisingly play an important role. However, the chain-of-thought approach does not always help due to inconsistency issues.",
+                // arxiv_//link="https://arxiv.org/abs/2305.14791",
+                )
+
+        document.write("</ul><br>")
+        document.write("<h1>2023</h1>")
+        document.write("<ul>")
+
+        add_paper(
+            title="Towards Model Robustness: Generating Contextual Counterfactuals for Entities in Relation Extraction",
+            authors="Mi Zhang, Tieyun Qian, Ting Zhang, Xin Miao",
+            conference="The Web Conference, 2023",
+        )
+
+        add_paper(
+            title="Mimicking the Thinking Process for Emotion Recognition in Conversation with Prompts and Paraphrasing",
+            authors="Ting Zhang, Zhuang Chen, Ming Zhong, Tieyun Qian",
+            conference="IJCAI, 2023",
+        )
+
+        add_paper(
+            title="On the Strength of Sequence Labeling and Generative Models for Aspect Sentiment Triplet Extraction",
+            authors="Shen Zhou, Tieyun Qian",
+            conference="ACL Findings, 2023",
+        )
+
+        add_paper(
+            title="Intent Disentanglement and Feature Self-supervision for Novel Recommendation",
+            authors="Tieyun Qian, Yile Liang, Qing Li, Xuan Ma, Ke Sun, Zhiyong Peng",
+            conference="IEEE TKDE, 2023",
+        )
+
+        add_paper(
+            title="Attribute Graph Neural Networks for Strict Cold Start Recommendation (Extended Abstract)",
+            authors="Tieyun Qian, Yile Liang, Qing Li, Hui Xiong",
+            conference="ICDE, 2023",
+        )
+
+        add_paper(
+            title="低资源方面级情感分析研究综述",
+            authors="陈壮，钱铁云，李万理，张婷，周燊，钟鸣，祝园园，刘梦赤",
+            conference="计算机学报, 2023",
+        )
+
+        add_paper(
+            title="Adversarial Multi-Teacher Distillation for Semi-Supervised Relation Extraction",
+            authors="Wanli Li, Tieyun Qian, Xuhui Li, Lixin Zou",
+            conference="IEEE TNNLS, 2023",
+        )
+
+        add_paper(
+            title="Interactive Lexical and Semantic Graphs for Semi-supervised Relation Extraction",
+            authors="Wanli Li, Tieyun Qian, Ming Zhong, Xu Chen",
+            conference="IEEE TNNLS, vol.10, 2023",
+        )
+
+        add_paper(
+            title="Pre-Training Across Different Cities for Next POI Recommendation",
+            authors="Ke Sun, Tieyun Qian, Chenliang Li, Xuan Ma, Qing Li, Ming Zhong, Yuanyuan Zhu, Mengchi Liu",
+            conference="ACM Transactions on the Web (TWeb), 2023",
+        )
+
+        add_paper(
+            title="Towards More Effective Encoders in Pre-Training for Sequential Recommendation",
+            authors="Ke Sun, Tieyun Qian, Ming Zhong, Xuhui Li",
+            conference="WWW Journal, 2023",
+        )
+
+        add_paper(
+            title="Cold-start Multi-hop Reasoning by Hierarchical Guidance and Self-verification",
+            authors="Mayi Xu, Ke Sun, Yongqi Li, Tieyun Qian",
+            conference="ECML/PKDD, 2023",
+        )
+
+        add_paper(
+            title="Generating Commonsense Counterfactuals for Stable Relation Extraction",
+            authors="Xin Miao, Yongqi Li, Tieyun Qian",
+            conference="EMNLP, 2023",
+        )
+
+        add_paper(
+            title="Type-Aware Decomposed Framework for Few-Shot Named Entity Recognition",
+            authors="Yongqi Li, Yu Yu, Tieyun Qian",
+            conference="Findings of EMNLP, 2023",
+        )
+
+        add_paper(
+            title="Dynamic Open-book Prompt for Conversational Recommender System",
+            authors="Xuan Ma, Tieyun Qian, Ke Sun",
+            conference="Findings of EMNLP, 2023",
+        )
+
+        add_paper(
+            title="One General Teacher for Multi-Data Multi-Task: A New Knowledge Distillation Framework for Discourse Relation Analysis",
+            authors="Congcong Jiang, Tieyun Qian, Bing Liu",
+            conference="IEEE ACM Transactions on Audio, Speech, and Language Processing (TASLP), 2024",
+        )
+
+
+        document.write("</ul><br>")
+        document.write("<h1>2022</h1>")
+        document.write("<ul>")
+
+        add_paper(
+            title="Attribute Graph Neural Networks for Strict Cold Start Recommendation",
+            authors="Tieyun Qian, Yile Liang, Qing Li, Hui Xiong",
+            conference="IEEE Transactions on Knowledge and Data Engineering (TKDE), 2022",
+        )
+
+        add_paper(
+            title="Knowledge Distillation for Discourse Relation Analysis",
+            authors="Congcong Jiang, Tieyun Qian, Bing Liu",
+            conference="The Web Conference, 2022",
+        )
+
+        add_paper(
+            title="Retrieve-and-Edit Domain Adaptation for End2End Aspect Based Sentiment Analysis",
+            authors="Zhuang Chen, Tieyun Qian",
+            conference="IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), 2022",
+        )
+
+        add_paper(
+            title="Exploit Feature and Relation Hierarchy for Relation Extraction",
+            authors="Mi Zhang, Tieyun Qian, Bing Liu",
+            conference="IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), 2022",
+        )
+
+        add_paper(
+            title="Description and demonstration guided data augmentation for sequence tagging",
+            authors="Zhuang Chen, Tieyun Qian",
+            conference="World Wide Web Journal, 2022",
+            // //link="2022wwwj.pdf"
+        )
+
+        add_paper(
+            title="Graph-based Model Generation for Few-Shot Relation Extraction",
+            authors="Wanli Li, Tieyun Qian",
+            conference="EMNLP, 2022",
+            // //link="2022emnlp.pdf"
+        )
+
+        add_paper(
+            title="Enhancing Graph Convolution Network for Novel Recommendation",
+            authors="Xuan Ma, Tieyun Qian, Yile Liang, Ke Sun, Hang Yun, Mi Zhang",
+            conference="DASFAA, 2022",
+            //link="2022dasfaa.pdf"
+        )
+
+
+        document.write("</ul><br>")
+        document.write("<h1>2021</h1>")
+        document.write("<ul>")
+
+        add_paper(
+            title="Bridge-based Active Domain Adaptation for Aspect and Opinion Terms Extraction",
+            authors="Zhuang Chen, Tieyun Qian",
+            conference="ACL, 2021",
+            //link="2021acl.pdf"
+        )
+
+        add_paper(
+            title="Enhancing Domain-Level and User-Level Adaptivity in Diversified Recommendation",
+            authors="Yile Liang, Tieyun Qian, Qing Li, Hongzhi Yin",
+            conference="SIGIR, 2021",
+            //link="2021sigir.pdf"
+        )
+
+        add_paper(
+            title="Context-aware seq2seq translation model for sequential recommendation",
+            authors="Ke Sun, Tieyun Qian, Xu Chen, Ming Zhong",
+            conference="Information Sciences, 2021",
+            //link="2021ins.pdf"
+        )
+
+
+        document.write("</ul><br>")
+        document.write("<h1>2020 and Earlier</h1>")
+        document.write("<ul>")
+
+        add_paper(
+            title="Relation-Aware Collaborative Learning for Unified Aspect-Based Sentiment Analysis",
+            authors="Zhuang Chen, Tieyun Qian",
+            conference="ACL, 2020",
+            //link="2020acl.pdf"
+        )
+
+        add_paper(
+            title="Where to Go Next: Modeling Long and Short Term User Preferences for Point-of-Interest Recommendation",
+            authors="Ke Sun, Tieyun Qian, Tong Chen, Yile Liang, Quoc Viet Hung Nguyen, Hongzhi Yin",
+            conference="AAAI, 2020",
+            //link="2020aaai.pdf"
+        )
+
+        add_paper(
+            title="Transfer Capsule Network for Aspect Level Sentiment Classification",
+            authors="Zhuang Chen, Tieyun Qian",
+            conference="ACL (1), 2019",
+            //link="2019acl.pdf"
+        )
+
+        add_paper(
+            title="Spatiotemporal Representation Learning for Translation-based POI Recommendation",
+            authors="Tieyun Qian, Bei Liu, Quoc Viet Hung Nguyen",
+            conference="ACM Transactions on Information Systems (TOIS), 2019",
+            //link="2019tois.pdf"
+        )
+
+        add_paper(
+            title="Adversarial Generation of Target Review for Rating Prediction",
+            authors="Huilin Yu, Tieyun Qian, Yile Liang, Bing Liu",
+            conference="DASFAA, 2020",
+            //link="2020dasfaa.pdf"
+        )
+
+        add_paper(
+            title="Relation Constrained Attributed Network Embedding",
+            authors="Yiqi Chen, Tieyun Qian",
+            conference="Information Sciences, 2020",
+            //link="2020INS.pdf"
+        )
+
+        add_paper(
+            title="Enhancing Aspect Term Extraction with Soft Prototypes",
+            authors="Zhuang Chen, Tieyun Qian",
+            conference="EMNLP, 2020",
+            //link="2020emnlp_chen.pdf"
+        )
+
+        add_paper(
+            title="Convolution over Hierarchical Syntactic and Lexical Graphs for Aspect Level Sentiment Analysis",
+            authors="Mi Zhang, Tieyun Qian",
+            conference="EMNLP, 2020",
+            //link="2020emnlp_zhang.pdf"
+        )
+
+        add_paper(
+            title="Generating Behavior Features for Cold-Start Spam Review Detection with Adversarial Learning",
+            authors="Xiaoya Tang, Tieyun Qian, Zhenni You",
+            conference="Information Sciences, 2020",
+            //link="2020INS-Spam.pdf"
+        )
+
+        add_paper(
+            title="代码知识图谱构建及智能化软件开发方法研究",
+            authors="王飞, 刘井平, 刘斌, 钱铁云, 肖仰华, 彭智勇",
+            conference="软件学报, 2020",
+            //link="2020软件学报.pdf"
+        )
+
+        add_paper(
+            title="基于复合关系图卷积的属性网络嵌入方法",
+            authors="陈亦琦, 钱铁云, 李万理, 梁贻乐",
+            conference="计算机研究与发展, 2020",
+            //link="2020研发.pdf"
+        )
+
+        add_paper(
+            title="What Can History Tell Us? Identifying Relevant Sessions for Next-Item Recommendation",
+            authors="Ke Sun, Tieyun Qian, Hongzhi Yin, Tong Chen, Yiqi Chen, Ling Chen",
+            conference="CIKM, 2019",
+            //link="2019cikm.pdf"
+        )
+
+        add_paper(
+            title="Align Reviews with Topics in Attention Network for Rating Prediction",
+            authors="Yile Liang, Tieyun Qian, Huilin Yu",
+            conference="DASFAA, 2019",
+            //link="2019dasfaa.pdf"
+        )
+
+        add_paper(
+            title="Generating Behavior Features for Cold-Start Spam Review Detection",
+            authors="Xiaoya Tang, Tieyun Qian, Zhenni You",
+            conference="DASFAA, 2019",
+            //link="2019dasfaa.pdf"
+        )
+
+        add_paper(
+            title="Aspect Aware Learning for Aspect Category Sentiment Analysis",
+            authors="Peisong Zhu, Zhuang Chen, Haojie Zheng, Tieyun Qian",
+            conference="TKDD, 2019",
+            //link="2019tkdd.pdf"
+        )
+
+        add_paper(
+            title="Time and Location Aware Points of Interest Recommendation in Location-Based Social Networks",
+            authors="Tieyun Qian, Bei Liu, Liang Hong, Zhenni You",
+            conference="Journal of Computer Science and Technology, 2018",
+            //link="2018jcst.pdf"
+        )
+
+        add_paper(
+            title="Bridge: Enhanced Signed Directed Network Embedding",
+            authors="Yiqi Chen, Tieyun Qian, Huan Liu, Ke Sun",
+            conference="CIKM, 2018",
+            //link="2018cikm.pdf"
+        )
+
+        add_paper(
+            title="Enhanced Aspect Level Sentiment Classification with Auxiliary Memory",
+            authors="Peisong Zhu, Tieyun Qian",
+            conference="COLING, 2018",
+            //link="2018coling-sentiment.pdf"
+        )
+
+        add_paper(
+            title="An Attribute Enhanced Domain Adaptive Model for Cold-Start Spam Review Detection",
+            authors="Zhenni You, Tieyun Qian, Bing Liu",
+            conference="COLING, 2018",
+            //link="2018coling-spam.pdf"
+        )
+
+        add_paper(
+            title="BASSI: Balance and Status Combined Signed Network Embedding",
+            authors="Yiqi Chen, Tieyun Qian, Ming Zhong, Xuhui Li",
+            conference="DASFAA, 2018",
+            //link="2018dasfaa.pdf"
+        )
+
+        add_paper(
+            title="基于边采样的网络表示学习模型",
+            authors="陈丽, 朱裴松, 钱铁云, 朱辉, 周静",
+            conference="软件学报, 2018",
+            //link="2018软件学报.pdf"
+        )
+
+        add_paper(
+            title="Review Authorship Attribution in a Similarity Space",
+            authors="Tieyun Qian, Bing Liu, Qing Li, Jianfeng Si",
+            conference="Journal of Computer Science and Technology, 2015",
+            //link="2015jcst.pdf"
+        )
+
+        add_paper(
+            title="Co-training on authorship attribution with very few labeled examples: methods vs. views",
+            authors="Tieyun Qian, Bing Liu, Ming Zhong, Guoliang He",
+            conference="SIGIR, 2014",
+            //link="2014sigir.pdf"
+        )
+
+        add_paper(
+            title="Tri-Training for Authorship Attribution with Limited Training Data",
+            authors="Tieyun Qian, Bing Liu, Li Chen, Zhiyong Peng",
+            conference="ACL, 2014",
+            //link="2014acl.pdf"
+        )
+
+        add_paper(
+            title="Exploiting small world property for network clustering",
+            authors="Tieyun Qian, Qing Li, Jaideep Srivastava, Zhiyong Peng, Yang Yang, Shuo Wang",
+            conference="World Wide Web, 2014",
+            //link="2014www.pdf"
+        )
+
+        add_paper(
+            title="Topic formation and development: a core-group evolving process",
+            authors="Tieyun Qian, Qing Li, Bing Liu, Hui Xiong, Jaideep Srivastava, Phillip C.-Y. Sheu",
+            conference="World Wide Web, 2014",
+            //link="2014www.pdf"
+        )
+
+        add_paper(
+            title="Identifying Multiple Userids of the Same Author",
+            authors="Tieyun Qian, Bing Liu",
+            conference="EMNLP, 2013",
+            //link="2013emnlp.pdf"
+        )
+
+</script>
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</div>
+
+
+
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>NLPGM@WHU</span></strong>. Partially borrowed from <a href="https://www.cs.princeton.edu/~danqic/papers.html">Danqi Chen</a>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
+
