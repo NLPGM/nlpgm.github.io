@@ -102,74 +102,13 @@ function copy(dest, source) {
 
   <!-- --------------------------------------award -------------------->
 
-<script>
-        paper_count = paper_count
 
-        function add_paper(title, authors, conference, link, bib, abstract, arxiv_link, code, press, slides, talk, msg) {
-            list_entry = "<li style=\"font-size:18px\">"
-            if (link != null)
-                list_entry += "<a href=\"" + link + "\">"
-            list_entry += "<b>" + title + "</b>"
-            if (link != null)
-                list_entry += "</a>"
-            list_entry += "<br>" + authors + ".<br>"
-            if (conference != null)
-                list_entry+= "<i><font color=\" #707070\">" + conference + "</font></i>.</li>"
-            if (bib != null) {
-                list_entry += "<div id=\"bib" + paper_count + "\" style=\"display:none\">" + bib + "</div>"
-                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",bib" + paper_count + ")\"> <span class=\"label label-success\">bib</span></a>"
-            }
-
-            if (abstract != null) {
-                list_entry += "<div id=\"abstract" + paper_count + "\" style=\"display:none\">" + abstract + "</div>"
-                list_entry += "<a href=\"javascript:copy(div" + paper_count + ",abstract" + paper_count + ")\"> <span class=\"label label-warning\">abstract</span></a>"
-            }
-            if (arxiv_link != null)
-                list_entry += " <a href=\"" + arxiv_link + "\"><span class=\"label label-primary\">arxiv</span></a>"
-
-            if (code != null)
-                list_entry += " <a href=\"" + code + "\"><span class=\"label label-danger\">code/models</span></a>"
-
-            if (press != null)
-                list_entry += " <a href=\"" + press + "\"><span class=\"label label-success\">press</span></a>"
-
-            if (slides != null)
-                list_entry += " <a href=\"" + slides + "\"><span class=\"label label-info\">slides/poster</span></a>"
-
-            if (talk != null)
-                list_entry += " <a href=\"" + talk + "\"><span class=\"label label-default\">talk</span></a>"
-
-            list_entry += "<br>"
-
-            if (msg != null)
-                list_entry += "<i>" + msg + "</i>"
-
-            // list_entry += "<div id=\"div" + paper_count + "\" style=\"font-size:15px\"></div><br>"
-
-            document.write(list_entry)
-
-            paper_count += 1
-        }
-
-
-        document.write("</ul>")
-        document.write("<ul>")
-        document.write("</ul><br>")
-        document.write("<h1>2026</h1>")
-        document.write("<ul>")
-
-        add_paper(
-            title="Debiasing LLMs in Knowledge-Intensive Tasks via Information-Gain Guided Front-Door Adjustment",
-            authors="Xin Miao, Yongqi Li, Hankun Kang, Mayi Xu, Jintao Wen, Yuanyuan Zhu, Ming Zhong, Jiawei Jiang, Tieyun Qian*",
-            conference="DASFAA, 2026",
-        )
-</script>
 
 
 <!-- --------------------------------------Publications -------------------->
 
 <script>
-        paper_count = paper_count
+        paper_count = 0
 
         function add_paper(title, authors, conference, link, bib, abstract, arxiv_link, code, press, slides, talk, msg) {
             list_entry = "<li style=\"font-size:18px\">"
