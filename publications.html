@@ -115,6 +115,30 @@ function copy(dest, source) {
 <script>
         var paper_count = 0
 
+          /**************  Awards Section  **************/
+        document.write("<h1>Awards</h1>");
+        document.write("<ul>");
+        
+        function add_award(year, content) {
+            document.write(
+                "<li style='font-size:18px'>" +
+                "<b>" + year + "</b>: " + content +
+                "</li>"
+            );
+        }
+        
+        add_award(
+          "2025",
+          "Congratulations to <b>Yongqi</b> on receiving the <b>National Scholarship for Graduate Students</b> (2024–2025)."
+        );
+        
+        // 后续你只需要按下面格式继续添加即可
+        // add_award("2024", "XXX student won XXX award.");
+        
+        document.write("</ul><br>");
+        /**************  End Awards  **************/
+
+
         function add_paper(title, authors, conference, link, bib, abstract, arxiv_link, code, press, slides, talk, msg) {
             list_entry = "<li style=\"font-size:18px\">"
             if (link != null)
