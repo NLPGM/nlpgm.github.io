@@ -102,14 +102,26 @@ function copy(dest, source) {
 
   <!-- --------------------------------------award -------------------->
 
-document.write('<details>');
-document.write('  <summary><span style="font-size:22px">Award Information</span></summary>');
-document.write('  <ul>');
-document.write('    <li style="font-size:18px">');
-document.write('      <b>Congratulations to Yongqi on receiving the National Scholarship for Graduate Students for the 2024–2025 academic year!</b>');
-document.write('    </li>');
-document.write('  </ul>');
-document.write('</details>');
+<div class="container">
+  <div class="section-title">
+    <h2>Awards</h2>
+  </div>
+
+  <script>
+    function add_award(year, content) {
+      document.write("<ul>");
+      document.write("<li style='font-size:18px'>");
+      document.write("<b>" + year + "</b>: " + content);
+      document.write("</li>");
+      document.write("</ul>");
+    }
+
+    add_award(
+      "2025",
+      "Congratulations to <b>Yongqi</b> on receiving the <b>National Scholarship for Graduate Students</b> for the 2024–2025 academic year."
+    );
+  </script>
+</div>
 
 
 
