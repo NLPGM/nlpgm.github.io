@@ -102,34 +102,29 @@ function copy(dest, source) {
 
   <!-- --------------------------------------award -------------------->
 
-document.write("<br><br>");
-document.write("<h2>Awards</h2>");
-document.write("<ul>");
+  /**************  Awards Section (Top)  **************/
+  document.write("<h2>Awards</h2>");
+  document.write("<ul>");
+  
+  function add_award(year, content) {
+      document.write(
+          "<li style='font-size:18px'>" +
+          "<b>" + year + "</b>: " + content +
+          "</li>"
+      );
+  }
+  
+  add_award(
+    "2025",
+    "Congratulations to <b>Yongqi</b> on receiving the <b>National Scholarship for Graduate Students</b> for the 2024–2025 academic year."
+  );
+  
+  // 你以后直接在这里继续加
+  // add_award("2024", "...")
+  
+  document.write("</ul><br>");
+  /**************  End Awards  **************/
 
-function add_award(year, content) {
-    document.write(
-        "<li style='font-size:18px'>" +
-        "<b>" + year + "</b>: " + content +
-        "</li>"
-    );
-}
-
-add_award(
-  "2025",
-  "Congratulations to <b>Yongqi</b> on receiving the <b>National Scholarship for Graduate Students</b> for the 2024–2025 academic year."
-);
-
-add_award(
-  "2024",
-  "XXX Best Paper Award, XXX Conference."
-);
-
-add_award(
-  "2023",
-  "Outstanding Graduate Student of Wuhan University."
-);
-
-document.write("</ul>");
 
 
 
